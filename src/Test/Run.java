@@ -11,7 +11,7 @@ public class Run {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root",
                     "root");
-            conn.close();
+            conn.close();//myProject
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
